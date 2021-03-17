@@ -1,0 +1,12 @@
+<mat-card class="card">
+  <mat-card-header>
+    <mat-card-title>{{ car.brand }}</mat-card-title>
+    <mat-card-subtitle>{{ car.model }} {{ car.year }}</mat-card-subtitle>
+  </mat-card-header>
+
+  <img mat-card-image [src]="car.imageUrl" alt="Car">
+
+  <mat-card-actions>
+    <button mat-flat-button color="accent" (click)="delete.emit(car.id)">Delete</button>
+  </mat-card-actions>
+</mat-card>

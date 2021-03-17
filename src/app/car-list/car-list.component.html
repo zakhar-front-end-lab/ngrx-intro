@@ -1,0 +1,8 @@
+<div class="container">
+
+  <app-car *ngFor="let car of cars$ | async"
+           [car]="car"
+           (delete)="deleteCar($event)">
+  </app-car>
+
+</div>
